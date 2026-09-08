@@ -1,0 +1,14 @@
+{
+  "name": "analizador-lexico-afd",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc -b && vite build",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": { "@vitejs/plugin-vue": "latest", "pinia": "latest", "vue": "latest" },
+  "devDependencies": { "@types/node": "^22.10.0", "@vitest/coverage-v8": "^3.0.0", "typescript": "~5.7.3", "vite": "^6.0.0", "vitest": "^3.0.0", "vue-tsc": "^2.2.0" }
+}

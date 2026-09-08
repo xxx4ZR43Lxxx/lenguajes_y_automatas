@@ -1,0 +1,2 @@
+<script setup lang="ts">defineProps<{tokens:number; errors:number; comments:number; characters:number; lines:number; state:string}>();</script>
+<template><section class="panel stats"><h2>Estadísticas</h2><dl><div><dt>Tokens</dt><dd>{{ tokens }}</dd></div><div><dt>Errores</dt><dd>{{ errors }}</dd></div><div><dt>Comentarios</dt><dd>{{ comments }}</dd></div><div><dt>Caracteres</dt><dd>{{ characters }}</dd></div><div><dt>Líneas</dt><dd>{{ lines }}</dd></div><div><dt>Estado</dt><dd><code>{{ state }}</code></dd></div></dl></section></template>
