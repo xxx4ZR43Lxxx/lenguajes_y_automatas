@@ -1,4 +1,4 @@
 {
-  "compilerOptions": { "target": "ES2022", "useDefineForClassFields": true, "module": "ESNext", "lib": ["ES2022", "DOM", "DOM.Iterable"], "skipLibCheck": true, "moduleResolution": "bundler", "allowImportingTsExtensions": false, "verbatimModuleSyntax": true, "noEmit": true, "strict": true, "jsx": "preserve", "isolatedModules": true, "moduleDetection": "force", "esModuleInterop": true },
+  "compilerOptions": { "target": "ES2022", "useDefineForClassFields": true, "module": "ESNext", "lib": ["ES2022", "DOM", "DOM.Iterable"], "skipLibCheck": true, "moduleResolution": "bundler", "allowImportingTsExtensions": true, "verbatimModuleSyntax": true, "noEmit": true, "strict": true, "jsx": "preserve", "isolatedModules": true, "moduleDetection": "force", "esModuleInterop": true },
   "include": ["src/**/*.ts", "src/**/*.vue", "tests/**/*.ts"]
 }

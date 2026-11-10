@@ -3,3 +3,10 @@ dist
 coverage
 *.tsbuildinfo
 .git
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+data/

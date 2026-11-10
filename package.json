@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
+    "server": "node server/index.mjs",
     "build": "vue-tsc -b && vite build",
     "test": "vitest run",
+    "test:server": "node --test tests/backend.node.mjs",
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": { "@vitejs/plugin-vue": "latest", "pinia": "latest", "vue": "latest" },

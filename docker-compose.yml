@@ -1,12 +1,15 @@
 services:
   app:
-    image: node:22-alpine
-    working_dir: /app
-    command: sh -c "npm install && npm run dev"
+    build: .
     ports:
-      - "5173:5173"
+      - "${APP_PORT:-8080}:8080"
+      - "${LEGACY_PORT:-5173}:8080"
+    environment:
+      PORT: "8080"
+      DATABASE_PATH: /data/analizador.sqlite
     volumes:
-      - .:/app
-      - node_modules:/app/node_modules
+      - sqlite_data:/data
+    restart: unless-stopped
+
 volumes:
-  node_modules:
+  sqlite_data:

@@ -35,8 +35,8 @@ export class SyntaxError extends Error {
 }
 
 export const syntaxSuggestion = (expected: string, received: Token): string => {
-  if (expected === '¿') return "Toda sentencia debe comenzar con el símbolo '¿'."
-  if (expected === ';') return "Se esperaba ';' al final de la declaración de variable."
+  if (expected === ';') return "Se esperaba ';' al final de la sentencia."
+  if (expected === 'resultado dentro de una tarea') return "Usa 'resultado' dentro del bloque de una tarea."
   if (expected === ')' && received.type === TokenType.LEFT_BRACE) return "¿Olvidaste cerrar el paréntesis ')' antes de abrir la llave '{'?"
   if (expected === '}') return "¿Olvidaste cerrar la llave '}' del bloque?"
   if (received.type === TokenType.EOF) return `Completa la construcción antes del fin del archivo: falta '${expected}'.`
